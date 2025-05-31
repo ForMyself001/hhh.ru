@@ -1,0 +1,20 @@
+.vacancy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,123,255,0.15);
+    border-color: #007bff;
+}
+
+/* Эффекты при наведении на кнопку */
+.vacancy-card:hover .btn-primary {
+    background-color: #0056b3 !important;
+    transform: scale(1.02);
+}
+
+/* Плавное появление эффектов */
+.vacancy-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-primary {
+    transition: all 0.2s ease-in-out;
+}

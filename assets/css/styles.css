@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-bar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}  
+
+.white-section {
+    height: 40px;
+    background: #ffffff;
+    width: 100%;
+}
+
+.black-section {
+    height: 75px;
+    background: #000000;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3), 0 -5px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 15%;
+}
+
+.footer {
+
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 5%; 
+    right: 5%;
+    width: 90%;
+    border-radius: 15px 15px 0 0; 
+} 
+.snowflake {
+    position: fixed;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(1px);
+    animation: fall linear forwards;
+  	z-index: -1;
+  	animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px white;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(-10vw);
+    }
+    100% {
+        transform: translateY(110vh) translateX(10vw);
+    }
+}

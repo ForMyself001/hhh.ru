@@ -1,0 +1,96 @@
+.register-container {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem; /* Адаптивный отступ */
+    box-sizing: border-box; /* Важно! */
+}
+
+.register-container form {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto; /* Центрирование */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.95rem;
+}
+
+/* Фикс для текстовых элементов */
+.register-container input:not([type="checkbox"]),
+.register-container textarea,
+.register-container select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+
+.register-container input:focus,
+.register-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.register-container input[type="submit"],
+.register-container input[type="button"] {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.register-container input[type="submit"]:hover,
+.register-container input[type="button"]:hover {
+    background: #0056b3;
+}
+
+.register-container input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.75rem;
+    accent-color: #007bff;
+}
+
+.register-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.register-container a {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+}
+
+.register-container a:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+}
+
+.register-container div {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
